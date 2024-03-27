@@ -102,7 +102,7 @@ namespace ys.dcur
             string pubKeyPath = "keys/ServerPub.pem";
 
             string[] privKeyPaths =
-{
+            {
                 "keys/ClientPri2.pem",
                 "keys/ClientPri3.pem",
                 "keys/ClientPri4.pem",
@@ -125,6 +125,7 @@ namespace ys.dcur
                 Console.ReadKey();
                 Environment.Exit(0);
             }
+
             string jsonData = File.ReadAllText(DataFile);
 
             dynamic parsedData = JsonConvert.DeserializeObject(jsonData);
